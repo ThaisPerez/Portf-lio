@@ -5,10 +5,13 @@ import Imagem from "./assets/imagem.svg"
 import Ipam from "./assets/ipam.svg"
 import Samar from "./assets/samar.svg"
 import Dcoimbra from "./assets/Dcoimbra.svg"
+import Linkedin from "./assets/Linkedin.svg"
+import Whatsapp from "./assets/Whatsapp.svg"
+
 
 export function App() {
   return (
-    <div>
+    <div className="overflow-hidden">
       <header className="bg-violet-700 w-screen h-14 flex justify-between items-center text-gray-200   pl-6 pr-6">
         <div>
 
@@ -84,10 +87,12 @@ export function App() {
               <p className="text-gray-400 text-sm flex-1">Teste com cypress, montagem de cenários e selenium</p>
             </div>
           </div>
-
-
         </div>
       </div>
+      <footer className="flex items-center justify-center h-44 gap-3 ">
+        <img src={Linkedin} alt="" />
+        <img src={Whatsapp} alt="" />
+      </footer>
     </div>
   )
 } 
